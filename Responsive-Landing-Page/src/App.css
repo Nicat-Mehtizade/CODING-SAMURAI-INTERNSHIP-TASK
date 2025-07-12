@@ -20,3 +20,32 @@
   position: relative;
   z-index: 1;
 }
+
+.team-gradient::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(
+    to right,
+    rgba(32, 40, 119, 0.95),
+    rgba(55, 46, 149, 0.95),
+    rgba(83, 49, 177, 0.9),
+    rgba(114, 48, 205, 0.85),
+    rgba(150, 41, 230, 0.95)
+  );
+  z-index: 10;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+  border-radius: 9999px;
+}
+
+.group:hover .team-gradient::before {
+  opacity: 1;
+}
+
+html {
+  scroll-behavior: smooth;
+}

@@ -16,44 +16,48 @@ const Header = () => {
   }, []);
 
   return (
-    <div className={`fixed top-0 left-0 w-full z-[999] p-2 md:p-4 ${scrolled ? "bg-[#202877]": "bg-transparent"}`}>
+    <div
+      className={`fixed top-0 left-0 w-full z-[999] p-2 md:p-4 ${
+        scrolled ? "bg-[#202877]" : "bg-transparent"
+      }`}
+    >
       <div className="max-w-[1280px] mx-auto">
         <div className="flex items-center justify-between py-2">
-          <div>
+          <a href="#hero">
             <img
               className="w-30"
               src="https://appco.themetags.com/img/logo-white-1x.png"
               alt="logo"
             />
-          </div>
+          </a>
           <nav className="hidden md:flex items-center gap-5 ">
             <a
               className="text-white/70 transition duration-200 hover:text-white"
-              href=""
+              href="#about"
             >
               About
             </a>
             <a
               className="text-white/70 transition duration-200 hover:text-white"
-              href=""
+              href="#features"
             >
               Features
             </a>
             <a
               className="text-white/70 transition duration-200 hover:text-white"
-              href=""
+              href="#pricing"
             >
               Pricing
             </a>
             <a
               className="text-white/70 transition duration-200 hover:text-white"
-              href=""
+              href="#team"
             >
               Team
             </a>
             <a
               className="text-white/70 transition duration-200 hover:text-white"
-              href=""
+              href="#contact"
             >
               Contact
             </a>
