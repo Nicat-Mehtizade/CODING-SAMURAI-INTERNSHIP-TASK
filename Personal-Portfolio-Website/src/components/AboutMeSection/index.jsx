@@ -18,7 +18,7 @@ const AboutMeSection = ({ mode }) => {
           dolor obcaecati iste placeat rerum, sint suscipit debitis. Voluptate
           quidem exercitationem voluptas dolorum tenetur sit.
         </p>
-        <button className="flex items-center gap-2 bg-[#2CA46D] text-white font-bold py-3 px-6 rounded-full text-sm">
+        <button className="flex items-center gap-2 bg-[#2CA46D] text-white font-bold py-3 px-6 rounded-full text-sm cursor-pointer">
           <p>Download CV</p>
           <FaDownload />
         </button>

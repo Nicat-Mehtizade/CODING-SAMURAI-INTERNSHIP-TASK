@@ -3,6 +3,11 @@ import Header from "../../components/Header";
 import Hero from "../../components/Hero";
 import AboutMeSection from "../../components/AboutMeSection";
 import WhatCanIDoForYouSection from "../../components/WhatCanIDoForYouSection";
+import MySkills from "../../components/MySkills";
+import MyEducationAndExperienceSection from "../../components/MyEducationAndExperienceSection";
+import RecentWorks from "../../components/RecentWorks";
+import Contact from "../../components/Contact";
+import Footer from "../../components/Footer";
 
 const Home = () => {
   const [mode, setMode] = useState("light");
@@ -28,6 +33,11 @@ const Home = () => {
           <Hero mode={mode} />
           <AboutMeSection mode={mode}/>
           <WhatCanIDoForYouSection mode={mode}/>
+          <MySkills mode={mode}/>
+          <MyEducationAndExperienceSection mode={mode}/>
+          <RecentWorks mode={mode}/>
+          <Contact mode={mode}/>
+          <Footer mode={mode}/>
         </div>
       </div>
     </div>

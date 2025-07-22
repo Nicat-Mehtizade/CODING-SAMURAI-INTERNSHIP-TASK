@@ -14,7 +14,7 @@ const WhatCanIDoForYouSection = ({ mode }) => {
       </h1>
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
         <div
-          className={`relative rounded-lg p-15 h-[250px] ${
+          className={`relative rounded-lg p-15 h-[250px] transition duration-300 hover:-translate-y-4 hover:shadow-2xl ${
             mode == "light" ? "bg-[#F7F7F7]" : "bg-[#2D343E]"
           }`}
         >
@@ -42,7 +42,7 @@ const WhatCanIDoForYouSection = ({ mode }) => {
           </div>
         </div>
         <div
-          className={`relative rounded-lg p-15 h-[250px] ${
+          className={`relative rounded-lg p-15 h-[250px] transition duration-300 hover:-translate-y-4 hover:shadow-2xl ${
             mode == "light" ? "bg-[#F7F7F7]" : "bg-[#2D343E]"
           }`}
         >
@@ -70,7 +70,7 @@ const WhatCanIDoForYouSection = ({ mode }) => {
           </div>
         </div>
         <div
-          className={`relative rounded-lg p-15 h-[250px] ${
+          className={`relative rounded-lg p-15 h-[250px] transition duration-300 hover:-translate-y-4 hover:shadow-2xl ${
             mode == "light" ? "bg-[#F7F7F7]" : "bg-[#2D343E]"
           }`}
         >
