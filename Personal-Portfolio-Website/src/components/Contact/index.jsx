@@ -1,6 +1,6 @@
 const Contact = ({ mode }) => {
   return (
-    <div className="py-5 px-3">
+    <div id="Contact" className="py-5 px-3">
       <h1
         className={`text-2xl lg:text-4xl font-bold text-center mb-5 ${
           mode == "light" ? "text-black" : "text-white"

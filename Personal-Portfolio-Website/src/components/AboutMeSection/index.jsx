@@ -2,7 +2,7 @@ import { FaDownload } from "react-icons/fa";
 
 const AboutMeSection = ({ mode }) => {
   return (
-    <div className="flex flex-col lg:flex-row items-center justify-evenly gap-5 p-5">
+    <div id="About" className="flex flex-col lg:flex-row items-center justify-evenly gap-5 p-5">
       <div className="lg:w-[45%]">
         <h1
           className={`text-4xl font-semibold mb-3 ${

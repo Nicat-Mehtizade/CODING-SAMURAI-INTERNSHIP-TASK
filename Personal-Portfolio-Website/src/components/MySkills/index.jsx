@@ -54,7 +54,7 @@ const MySkills = ({ mode }) => {
   }, [animated]);
 
   return (
-    <div ref={sectionRef} className="py-16 text-center" id="skills">
+    <div ref={sectionRef} className="py-16 text-center" id="Skills">
       <h1 className={`text-3xl font-bold mb-10 ${mode=="light" ? "text-gray-800" : "text-white"}`}>My Skills</h1>
       <div className="grid grid-cols-2 md:grid-cols-4 gap-10 justify-items-center">
         {skills.map(({ title, percent }, index) => (

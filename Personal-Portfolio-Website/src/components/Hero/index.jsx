@@ -10,7 +10,7 @@ import { FaSkype } from "react-icons/fa";
 
 const Hero = ({ mode }) => {
   return (
-    <div className="flex flex-col lg:flex-row lg:items-center justify-evenly py-5 px-3">
+    <div id="Home" className="flex flex-col lg:flex-row lg:items-center justify-evenly py-5 px-3">
       <div className="order-2 lg:order-1">
         <img
           className="max-w-[700px] w-full"

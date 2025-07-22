@@ -1,6 +1,6 @@
 const MyEducationAndExperienceSection = ({ mode }) => {
   return (
-    <div className="py-10">
+    <div id="Experiences" className="py-10">
       <h1
         className={`text-xl lg:text-4xl font-bold text-center mb-5 ${
           mode == "light" ? "text-black" : "text-white"

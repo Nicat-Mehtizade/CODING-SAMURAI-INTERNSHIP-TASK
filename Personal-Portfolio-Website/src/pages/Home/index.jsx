@@ -8,9 +8,11 @@ import MyEducationAndExperienceSection from "../../components/MyEducationAndExpe
 import RecentWorks from "../../components/RecentWorks";
 import Contact from "../../components/Contact";
 import Footer from "../../components/Footer";
+import { FaArrowUp } from "react-icons/fa";
 
 const Home = () => {
   const [mode, setMode] = useState("light");
+  const [visible,setVisible]=useState(false)
 
   useEffect(() => {
     const savedMode = localStorage.getItem("mode");
@@ -20,6 +22,23 @@ const Home = () => {
       localStorage.setItem("mode", "light");
     }
   }, []);
+
+    useEffect(() => {
+    const toggleVisibility = () => {
+      if (window.scrollY > 300) {
+        setVisible(true);
+      } else {
+        setVisible(false);
+      }
+    };
+
+    window.addEventListener("scroll", toggleVisibility);
+    return () => window.removeEventListener("scroll", toggleVisibility);
+  }, []);
+
+  const ScrolltoTop=()=>{
+    window.scrollTo({top:0})
+  }
 
   return (
     <div
@@ -40,6 +59,9 @@ const Home = () => {
           <Footer mode={mode}/>
         </div>
       </div>
+      <button onClick={()=>ScrolltoTop()} className={`fixed bottom-3 right-3 bg-green-600 p-3 rounded-full text-white cursor-pointer transition duration-300 hover:bg-green-700 ${visible ? "opacity-100" : "opacity-0"}`}>
+        <FaArrowUp />
+      </button>
     </div>
   );
 };
